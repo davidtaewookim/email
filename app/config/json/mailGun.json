@@ -1,0 +1,17 @@
+{
+  "provider": "mailgun",
+  "header": {
+    "hostUrl": "api.mailgun.net",
+    "port": 443,
+    "path": "/v3/sandbox0c5f5f70caac44ddad36143ff3bce35c.mailgun.org/messages",
+    "Conten-Type": "application/x-www-form-urlencoded"
+  },  
+  "bodyKeyMapping": {
+    "sender": "from",
+    "recipients": "to",
+    "subject": "subject",
+    "contents": "text",
+    "cc": "cc",
+    "bcc": "bcc"
+  }
+}

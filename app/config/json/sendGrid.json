@@ -1,0 +1,17 @@
+{
+  "provider": "sendgrid",
+  "header": {
+    "hostUrl": "api.sendgrid.com",
+    "port": 443,
+    "path": "/v3/mail/send",
+    "Conten-Type": "application/json"
+  },  
+  "bodyKeyMapping": {
+    "sender": "from",
+    "recipients": "to",
+    "subject": "subject",
+    "contents": "text",
+    "cc": "cc",
+    "bcc": "bcc"
+  }
+}
