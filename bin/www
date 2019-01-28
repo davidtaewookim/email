@@ -68,7 +68,7 @@ const onError = (error) => {
     default:
       throw error;
   }
-}
+};
 
 /**
  * Event listener for HTTP server "listening" event.

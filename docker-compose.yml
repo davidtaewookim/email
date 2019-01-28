@@ -1,0 +1,27 @@
+version: '2.2'
+services:
+  siteminder:
+    build: .
+    image: siteminder
+    init: true
+    container_name: siteminder
+    environment:
+      - 'MAILGUN_URL=https://api.mailgun.net/v3/your-domain.mailgun.org/messages'
+      - 'MAILGUN_SENDER=Mailgun Sandbox <postmaster@your-domain.mailgun.org>'
+      - 'MAILGUN_CREDENTIAL=api:your-api-key'
+      - 'MAILGUN_CONTENTTYPE=application/x-www-form-urlencoded'
+      - 'SENDGRID_URL=https://api.sendgrid.com/v3/mail/send'
+      - 'SENDGRID_CREDENTIAL=your-api-key'
+      - 'SENDGRID_CONTENTTYPE=application/json'
+    networks: 
+      dockernet:
+        ipv4_address: 172.18.0.2
+    ports:      
+      - '3000:3000'        
+networks: 
+  dockernet:
+    driver: bridge
+    ipam: 
+      config:
+        - subnet: 172.18.0.0/16
+          gateway: 172.18.0.1

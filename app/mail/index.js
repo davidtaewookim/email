@@ -1,3 +1,7 @@
-const mail = require('./mailController');
+const sendMail = require('./mail-controller');
+const schema = require('./mail-schema');
 
-module.exports = mail;
+module.exports = {
+  sendMail,
+  schema,
+};

@@ -1,0 +1,38 @@
+{
+  "400": {
+      "status": "INVALID_ARGUMENT",
+      "message": "Client specified an invalid argument."
+  },
+  "401": {
+      "status": "UNAUTHENTICATED",
+      "message": "Request not authenticated due to missing, invalid, or expired token."
+  },
+  "403": {
+      "status": "PERMISSION_DENIED",
+      "message": "Client does not have sufficient permission."
+  },
+  "404": {
+      "status": "NOT_FOUND",
+      "message": "A specified resource is not found, or the request is rejected by undisclosed reasons."
+  },
+  "409": {
+      "status": "ALREADY_EXISTS",
+      "message": "The resource that a client tried to create already exists."
+  },
+  "429": {
+      "status": "RESOURCE_EXHAUSTED",
+      "message": "Out of resource quota or reaching rate limiting."
+  },
+  "500": {
+      "status": "INTERNAL",
+      "message": "Internal server error."
+  },
+  "503": {
+      "status": "UNAVAILABLE",
+      "message": "Service unavailable."
+  },
+  "504": {
+      "status": "GATEWAY_TIMEOUT",
+      "message": "Request did not finish within the deadline."
+  }
+}

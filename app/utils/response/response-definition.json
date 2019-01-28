@@ -1,0 +1,6 @@
+{
+  "200": {
+      "status": "OK",
+      "message": "Email sent Successfully"
+  }
+}
