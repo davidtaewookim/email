@@ -19,11 +19,11 @@
 
 ## Overview
 
-The service provides rest api to send email using mailgun or sendgrid. Please refer to [API Document](#api-document) for the API detail and [Business Requirement](#business-requirement). You can test the working version at http://
+The service provides rest api to send email using mailgun or sendgrid. Please refer to [API Document](#api-document) for the API detail and [Business Requirement](#business-requirement). You can test the working version at https://hidden-bastion-34629.herokuapp.com/mail
 
 ## Technical Overview
 
-Functional Javascript were used as much as possible, for example, business logic in `mail-controller.js` for creating email object for each provider and failover action were only 4 lines of code, due to functional style. However, I'm well versed in OOP style as well.
+Functional Javascript were used as much as possible, for example, business logic in `mail-controller.js` for creating email object for each provider and failover action were only 4 lines of code, due to functional style. OOP styles can also be employed if necessary.
 
 ```js
   const mailerMailgun = factory('mailgun')(email)(send);
