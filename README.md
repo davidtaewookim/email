@@ -95,7 +95,7 @@ docker-compose up -d --build
 - curl, please change host address accordingly.
 
 ```sh
-curl -d '{"sender": "test@test.com","recipients": ["test@gmail.com"],"contents": "test contents"}' -H "Content-Type: application/json" -X POST http://localhost:3000/mail
+curl -d '{"sender": "taewdy@gmail.com","recipients": ["taewdy@gmail.com"],"contents": "test contents"}' -H "Content-Type: application/json" -X POST https://hidden-bastion-34629.herokuapp.com/mail
 ```
 
 - postman, please change host address accordingly.
@@ -107,8 +107,8 @@ Content-Type: application/json
 Cache-Control: no-cache
 
 {
- "sender": "test@gmail.com",
- "recipients": ["test@gmail.com"],
+ "sender": "taewdy@gmail.com",
+ "recipients": ["taewdy@gmail.com"],
  "contents": "test contents"
 }
 ```
